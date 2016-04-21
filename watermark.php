@@ -4,6 +4,8 @@ if (isset($_POST['data']))
 {
 	$pre_image = $_POST['data'];
 
+    $watermark_width = 600;
+    $watermark_height = 231;
 	$max_size = 600; //max image size in Pixels
 	$destination_folder = 'processed';
 	$watermark_png_file = 'resources/overlay.png'; //watermark png file
