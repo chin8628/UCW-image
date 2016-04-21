@@ -30,10 +30,10 @@
             imageBackground: true,
             imageBackgroundBorderWidth: 15,
             quality: 1.0,
-            originalSize: true
+            originalSize: true,
+            height: 600,
+            width: 600
         });
-
-        $('#image-cropper').cropit('previewSize', { width: 600, height: 600 });
 
         $('#crop-btn').click(function() {
             var string = $("#filepath").val()
