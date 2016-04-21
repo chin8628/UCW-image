@@ -1,0 +1,36 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background: #02010C;
+}
+
+#upload-form {
+    padding: 20px;
+    background: #F7F7F7;
+    border: 1px solid #CCC;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+#upload-form input[type=file] {
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+#upload-form input[type=submit] {
+    height: 30px;
+}
+.cropit-preview {
+    /* You can specify preview size in CSS */
+    width: 400px;
+    height: 400px;
+    background: #BBB;
+    margin-bottom: 25px;
+}
+.cropit-preview-background {
+    opacity: .2;
+}
+#control{
+    margin-bottom: 10px;
+    text-align: center;
+}
