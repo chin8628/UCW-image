@@ -6,9 +6,10 @@ if (isset($_POST['data']))
 
     $watermark_width = 600;
     $watermark_height = 231;
+
 	$max_size = 600; //max image size in Pixels
 	$destination_folder = 'processed';
-	$watermark_png_file = 'resources/overlay.png'; //watermark png file
+	$watermark_png_file = 'resources/overlay.png';
 
 	$image_resource =  imagecreatefrompng($pre_image);
 
@@ -27,11 +28,11 @@ if (isset($_POST['data']))
 		{
 
 			//center watermark
-			$watermark_left = $new_image_width  - 499; //watermark left
-			$watermark_bottom = $new_image_height - 192; //watermark bottom
+			$watermark_left = $new_image_width  - $watermark_width; //watermark left
+			$watermark_bottom = $new_image_height - $watermark_height; //watermark bottom
 
 			$watermark = imagecreatefrompng($watermark_png_file); //watermark image
-			imagecopy($new_canvas, $watermark, $watermark_left, $watermark_bottom, 0, 0, 499, 192); //merge image
+			imagecopy($new_canvas, $watermark, $watermark_left, $watermark_bottom, 0, 0, $watermark_width, $watermark_height); //merge image
 
 			//output image direcly on the browser.
 			header('Content-Type: image/jpeg');

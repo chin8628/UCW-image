@@ -28,8 +28,12 @@
 
         $('#image-cropper').cropit({
             imageBackground: true,
-            imageBackgroundBorderWidth: 15 // Width of background border
+            imageBackgroundBorderWidth: 15,
+            quality: 1.0,
+            originalSize: true
         });
+
+        $('#image-cropper').cropit('previewSize', { width: 600, height: 600 });
 
         $('#crop-btn').click(function() {
             var string = $("#filepath").val()

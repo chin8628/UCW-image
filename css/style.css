@@ -9,9 +9,10 @@ html, body{
     background: #F7F7F7;
     border: 1px solid #CCC;
     margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 600px;
 }
 #upload-form input[type=file] {
     border: 1px solid #ddd;
@@ -21,9 +22,6 @@ html, body{
     height: 30px;
 }
 .cropit-preview {
-    /* You can specify preview size in CSS */
-    width: 400px;
-    height: 400px;
     background: #BBB;
     margin-bottom: 25px;
 }
